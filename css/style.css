@@ -1,0 +1,595 @@
+/*Sub nav*/
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.container {
+    margin: 0 auto;
+    width: 1140px;
+    display: block;
+}
+
+header section#sub {
+    float: left;
+    display: block;
+    width: 100%;
+    background-color: #e0e0e080;
+}
+
+header section#sub div#logos {
+    width: 748px;
+    float: left;
+    height: 51px;
+}
+
+header section#sub div#logos a img {
+    margin-top: 16.5px;
+    margin-right: 30px;
+}
+
+header section#sub nav#sub {
+    float: right;
+    display: block;
+}
+
+header section#sub nav#sub ul {
+    list-style: none;
+    padding: 0px;
+}
+
+header section#sub nav#sub ul li {
+    display: inline-block;
+    
+}
+
+header section#sub nav#sub ul li a {
+    text-decoration: none;
+    color: #0d0c22;
+    font-size: 13px;
+}
+/*Sub nav*/
+
+
+/*header*/
+header {
+    float: left;
+    display: block;
+    width: 100%;
+
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+    /*position: fixed;
+    top: 0;*/
+}
+
+header a#logo {
+    width: 62px;
+    float: left;
+    display: block;
+    margin-right: 36px;
+}
+
+header a#logo img {
+    margin-top: 22px;
+    margin-bottom: 22px;
+    float: left;
+}
+
+nav#principal {
+    float: left;
+    display: block;
+    height: 50px;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+
+    /*position: absolute;*/
+}
+
+nav#principal ul {
+    list-style: none;
+    padding: 0px;
+}
+
+nav#principal ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+nav#principal ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    position: relative;
+
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+nav#principal ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #ffc506;
+    transition: 0.5s ease;
+}
+
+nav#principal ul li a:hover {
+    color: #1e1e2b;
+    transition-delay: 0.5s;
+}
+
+nav#principal ul li a:hover::before {
+    width: 100%;
+}
+
+nav#principal ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #ffc506;
+    transition: 0.4s ease;
+    z-index: -1;
+}
+
+.pesquisa {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+
+    float: right;
+    margin-top: 13px;
+   }
+   
+.input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: all 0.2s ease-out;
+}
+
+.input:hover, :focus {
+    background-color: #dbdbdbb7;
+}
+   
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: black;
+    width: 1rem;
+    height: 1rem;
+}
+
+header .buttoms {
+    float: right;
+    display: block;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+}
+
+header .buttoms button {
+    border: none;
+    border-radius: 100px;
+    height: 40px;
+    padding: 0 1rem;
+    font-size: large;
+    transition: all 0.3s ease-out;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 7px;
+}
+
+header .buttoms button:hover, :focus {
+    background-color: #dbdbdbb7;
+}
+
+header .buttoms a button img {
+    width: 20px;
+}
+/*header*/
+
+
+/*slider*/
+.slider {
+    float: left;
+    display: block;
+    width: 100%;
+    background-color: #e0e0e07e;
+}
+
+.slider .slides {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .slides img {
+    width: 30px;
+    float: left;
+    margin-top: 10.5px;
+}
+
+.slider .slides p {
+    color: #0d0c22;
+    float: left;
+    margin-left: 5px;
+}
+
+.slider .slides p a {
+    color: #0d0c22;
+}
+/*slider deixa para depois porque agora não sei como*/
+
+
+/*main imagems*/
+main {
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+main .bloco a img {
+    display: block;
+    width: 100%;
+}
+
+main .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+main .buttons button {
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 30px;
+    line-height: 1;
+    font-size: larger;
+    padding: 14px;
+    margin: 10px;
+    margin-bottom: 100px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+main .buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.726);
+}
+/*main imagems*/
+
+
+/*main cards*/
+main .tenis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .tenis a img {
+    width: 98%;
+    transition: all 0.2s;
+    margin-bottom: 100px;
+}
+
+main .tenis a img:hover {
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transform: scale(1.02);
+}
+/*main cards*/
+
+
+/*mais imagems no main*/
+main .buttons-no-mg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+main .buttons-no-mg button {
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 30px;
+    line-height: 1;
+    font-size: larger;
+    padding: 14px;
+    margin: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+main .buttons-no-mg button:hover {
+    background-color: rgba(0, 0, 0, 0.726);
+}
+/*mais imagems no main*/
+
+
+/*main imagems*/
+main .cards {
+    float: left;
+    display: flex;
+    width: 100%;
+}
+
+main .cards .card {
+    height: 500px;
+    margin-bottom: 40px;
+    margin-right: 5px;
+    transition: all 0.3s;
+    color: rgba(240, 248, 255, 0.904);
+    font-size: 14px;
+    padding: 25px;
+    width: 100%;
+    align-content: end;
+    box-shadow: black 0px -150px 300px -28px inset;
+}
+
+main .cards .card#imagem-1 {
+    background-image: url('../img/esse-aqui-de-corrida.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main .cards .card#imagem-2 {
+    background-image: url('../img/esporte-presente-novo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main .cards .card#imagem-3 {
+    background-image: url('../img/tenis-desejado-novo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main .cards .card:hover {
+    border-radius: 5px;
+}
+
+main .cards .card button {
+    border: none;
+    border-radius: 100px;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+main .cards .card button:hover {
+    background-color: rgba(248, 248, 248, 0.705);
+}
+
+main .cards .card a img {
+    width: 100%;
+}
+/*main imagems*/
+
+
+/*nav de produtos*/
+main .listas-btn {
+    float: left;
+    display: block;
+    margin-bottom: 10px;
+}
+
+main .listas-btn .btn-list {
+    border: none;
+    background-color: #fff;
+    padding: 23px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 30px;
+    /*border-bottom: #0d0c22 1.99999999px solid;*/
+}
+
+main .buscados {
+    float: left;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+main .buscados ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+main .buscados ul p {
+    font-size: 26px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+main .buscados ul li {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+main .buscados ul li a {
+    text-decoration: none;
+    color: rgb(115, 115, 115);
+    transition: all 0.2s;
+}
+
+main .buscados ul li a:hover {
+    color: rgb(17, 17, 17);
+}
+
+main .saiba-mais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-bottom: 70px;
+    width: 100%;
+}
+
+main .saiba-mais button {
+    border: none;
+    background-color: #fff;
+    font-size: large;
+    cursor: pointer;
+    border-bottom: #0d0c22 1.99999999px solid;
+}
+
+main .listas ul li {
+    display: inline-block;
+    cursor: pointer;
+}
+/*nav de produtos*/
+
+
+/*footer*/
+footer {
+    display: block;
+    float: left;
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+    color: #fff;
+}
+
+footer .bloco-lista {
+    float: left;
+    display: flex;
+    width: 810px;
+    justify-content: space-between;
+}
+
+footer .bloco-lista ul{
+    list-style: none;
+    padding: 10px;
+}
+
+footer .bloco-lista .expecifica li {
+    margin-bottom: 15px;
+}
+
+footer .bloco-lista .expecifica li a {
+    font-size: 16px;
+}
+
+footer .bloco-lista ul .titulo {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+footer .bloco-lista ul li {
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+footer .bloco-lista ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+footer .bloco-5 {
+    padding: 10px;
+    width: 258px;
+    float: right;
+}
+
+footer .bloco-5 .redes {
+    margin-bottom: 50px;
+}
+
+footer .bloco-5 .redes img {
+    margin: 0;
+    width: 21px;
+    padding: 7px;
+    transition: all 0.1s;
+}
+
+footer .bloco-5 .redes img:hover {
+    transform: scale(1.2);
+}
+
+
+footer .bloco-5 .pagamento {
+    float: left;;
+}
+
+footer .bloco-5 .pagamento img {
+    width: 35px;
+    padding: 2px;
+}
+
+footer .bloco-6 {
+    float: left;
+    display: flex;
+    width: 100%;
+}
+
+footer .bloco-6 hr {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+footer .bloco-7 {
+    float: left;
+    display: flex;
+    margin-bottom: 30px;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+footer .bloco-7 a { 
+    text-decoration: none;
+    margin-right: 40px;
+    color: #fff;
+    transition: all 0.2s;
+    font-size: 12px;
+}
+
+footer .bloco-7 a:hover {
+    color: #b1b1b1;
+}
+
+footer .bloco-8 {
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+}
+
+footer .bloco-8 p {
+    font-size: 10px;
+    color: #cacaca;
+    margin: 0;
+    padding: 0;
+    float: right;
+    display: flex;
+    justify-content: flex-end
+}
